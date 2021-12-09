@@ -1,12 +1,18 @@
 import React from "react";
 
 const AddUser = props => {
+
+    function addUserHandler(event) {
+        event.preventDefault();
+    }
+
     return (
-        <form>
+        <form onSubmit={addUserHandler}>
             <label htmlFor="username">Username</label>
             <input type="text" id="username" />
             <label htmlFor="Age">Age</label>
-            <input type="text" id="age" />
+            <input type="number" id="age" />
+            <button type="submit">Add user</button>
         </form>
     )
 }
