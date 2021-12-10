@@ -11,6 +11,7 @@ const AddUser = props => {
 
     function addUserHandler(event) {
         event.preventDefault();
+        console.log(enteredAge, enteredUserName)
     }
 
     function userNameChangeHandler(event) {
