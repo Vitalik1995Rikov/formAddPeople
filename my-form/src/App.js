@@ -6,7 +6,7 @@ function App() {
   return (
     <div>
       <AddUser/>
-      <UsersList/>
+      <UsersList users={[]}/>
     </div>
   );
 }
