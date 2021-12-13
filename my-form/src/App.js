@@ -8,10 +8,14 @@ function App() {
 
   const [userList, setUserList] = useState([]);
 
+  function onUserHandker(uName, uAge) {
+
+  }
+
   return (
     <div>
-      <AddUser/>
-      <UsersList users={[]}/>
+      <AddUser onAddUser={}/>
+      <UsersList users={userList}/>
     </div>
   );
 }
