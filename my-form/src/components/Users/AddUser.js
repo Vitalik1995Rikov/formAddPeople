@@ -9,13 +9,22 @@ const AddUser = props => {
 
     const [enteredUserName, setEnteredUserName] = useState('');
     const [enteredAge, setEnteredAge] = useState('');
+    const [error, setError] = useState();
 
     function addUserHandler(event) {
         event.preventDefault();
         if (enteredAge.trim().length === 0 || enteredUserName.trim().length === 0) {
+            setError({
+                title: 'Invalid input',
+                message: 'Please enter a valid name and age'
+            });
             return;
         }
         if (+enteredAge < 1) {
+            setError({
+                title: 'Invalid age',
+                message: 'Please enter a valid age'
+            });
             return;
         }
         props.onAddUser(enteredUserName, enteredAge);
@@ -33,7 +42,7 @@ const AddUser = props => {
 
     return (
         <div>
-    <ErrorModal title="An error occured" message="Something went wrong"/>
+    {error && <ErrorModal title={error.title} message={error.message}/>}
         <Card className={classes.input}>
             <form onSubmit={addUserHandler}>
                 <label htmlFor="username">Username</label>
