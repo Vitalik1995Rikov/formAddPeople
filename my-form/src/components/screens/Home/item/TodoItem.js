@@ -6,7 +6,7 @@ const TodoItem = ({todo, changeTodo}) => {
         <button className="flex items-center mb-3 rounded-xl bg-gray-800 w-full"
         onClick={() => changeTodo(todo.id)}>
             <Check isCompleted={todo.isCompleted}/>
-            {todo.title}
+            <span className={`flex ${ todo.isCompleted ? 'line-through' : ''}`}>{todo.title}</span>
         </button>
     )
 }
