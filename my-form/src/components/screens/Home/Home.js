@@ -32,9 +32,7 @@ const Home = () => {
     }
 
     const removeTodo = (id) => {
-        const copy = [...todos]
-        const filterCopy = copy.filter(t => t.id !== id)
-        setTodos(filterCopy)
+        setTodos([...todos].filter(t => t.id !== id))
     }
 
     return (
