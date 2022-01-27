@@ -22,7 +22,7 @@ const todos = [
 const Home = () => {
     return (
         <div className="bg-gray-9100 h-screen text-white">
-            {todos.map(todo => <TodoItem key={todo._id} todo={todo}/>)}
+            {todos.map(todo => <TodoItem key={todo.id} todo={todo}/>)}
         </div>
     )
 }
