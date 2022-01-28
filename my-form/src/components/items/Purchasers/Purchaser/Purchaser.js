@@ -5,7 +5,7 @@ const Purchaser = ({item}) => {
     return (
         <div className="flex mt-3">
             <ol>{item.id} Purchaser</ol>
-            <ol>Name{item.name}</ol>
+            <ol>{item.name}</ol>
             <ol>
                 <GrAndroid/>
             </ol>
