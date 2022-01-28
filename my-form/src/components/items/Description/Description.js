@@ -14,7 +14,7 @@ const Description = () => {
                 </div>
             </div>
             <div>
-                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80" alt="img" />
+                {/* <img className="" src="https://arch-buro.com/wp-content/uploads/2018/07/fasady-odnojetazhnyh-domov-1.jpg" alt="img" /> */}
             </div>
         </div>
         

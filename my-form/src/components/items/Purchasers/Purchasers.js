@@ -5,7 +5,7 @@ import Purchaser from './Purchaser/Purchaser'
 const purchasers = [
     {
         id: 1,
-        name: 'Alex',
+        name: 'Finaly I found my dream house here. The service is also friendly and polite. The best!',
         photo: 'https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
         photoHome: 'http/',
         opinion: 'Residental real estate may contain either a single family or multifamily structure'
