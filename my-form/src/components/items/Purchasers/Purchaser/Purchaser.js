@@ -1,18 +1,17 @@
 import React from "react";
-// import { DiAndroid, DiApple, DiAptana, DiAtlassian } from "react-icons/di";
 
 const Purchaser = ({purchasers}) => {
     return (
-        <div className="flex mt-3">
-            <div className="w-1/3">
-                <ol>{purchasers[0].id} Purchaser</ol>
-                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=220&h=220&q=80" alt="img" />
+        <div className="flex mt-1">
+            <div className="w-1/3 mt-10">
+                {/* <ol>{purchasers[0].id} Purchaser</ol> */}
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80" alt="img" />
                 <ol>{purchasers[0].name}</ol>
             </div>
-            
             <div className="flex">
-                {/* <img className="w-40" src="https://gallery.forum-grad.ru/files/7/1/9/3/5/blackpool-house-04.jpg" alt="img" /> */}
-                <ol className="m-10 text-xl">{purchasers[0].opinion}</ol>
+                <div className="w-1/3"></div>
+                {/* <img className="" src="https://cdn.pixabay.com/photo/2016/11/10/21/11/house-1815147__340.png" alt="img"/> */}
+                <ol className="text-xl mt-5">{purchasers[0].opinion}</ol>
             </div>
             
         </div>
