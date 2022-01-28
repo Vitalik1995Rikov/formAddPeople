@@ -21,10 +21,10 @@ ReactDOM.render(
             <Link to="/property">Our property</Link>
             <Link to="/agents">Agents</Link>
             <Link to="/blog">Blog</Link>
+            <Link to="/notfound">Not found</Link>
             <button>Sign up</button>
         </div>
     </header>
-    
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/agents" element={<Agents/>}/>

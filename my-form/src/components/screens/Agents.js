@@ -23,7 +23,17 @@ const data = [
 
 const Agents = () => {
     return (
-        <div>Agents</div>
+        <div>
+            <div className="flex justify-center">Agents</div>
+            <div className="flex justify-around">
+                <h1>Name</h1>
+                <h1>Surname</h1>
+                <h1>Position</h1>
+            </div>
+            {data.map(item => (<div>{item.name}</div>))}
+        </div>
+        
+
     )
 }
 
