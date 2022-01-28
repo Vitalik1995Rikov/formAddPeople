@@ -1,8 +1,8 @@
-import react from "react";
+import React from "react";
 
 const Header = () => {
     return (
-        <div>
+        <div className="flex ">
             <h1>Solary</h1>
             <h2>Home</h2>
             <h2>Our property</h2>
