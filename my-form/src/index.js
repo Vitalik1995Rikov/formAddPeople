@@ -15,8 +15,8 @@ ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
     <header>
-    <div className="flex ">
-            <h1>Solary</h1>
+    <div className="flex mb-5">
+            <h1 className='text-2xl font-bold'>Solary</h1>
             <Link to="/">Home</Link>
             <Link to="/property">Our property</Link>
             <Link to="/agents">Agents</Link>

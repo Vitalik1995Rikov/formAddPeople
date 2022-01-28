@@ -6,6 +6,7 @@ import Purchasers from "../items/Purchasers/Purchasers";
 const Home = () => {
     return (
         <div>
+            
             <Description/>
             <Purchasers/>
         </div>
