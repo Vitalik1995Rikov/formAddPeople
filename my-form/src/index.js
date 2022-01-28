@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 
 import './index.css';
 
@@ -13,13 +13,27 @@ import NotFound from './components/screens/NotFound';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Routes>
+    <BrowserRouter>
+    <header>
+    <div className="flex ">
+            <h1>Solary</h1>
+            <Link to="/">Home</Link>
+            <Link to="/property">Our property</Link>
+            <Link to="/agents">Agents</Link>
+            <Link to="/blog">Blog</Link>
+            <button>Sign up</button>
+        </div>
+    </header>
+    
+      <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/agents" element={<Agents/>}/>
         <Route path="/blog" element={<Blog/>}/>
         <Route path="/property" element={<OurProperty/>}/>
         <Route path="/*" element={<NotFound/>}/>
-    </Routes>
+      </Routes>
+    </BrowserRouter>
+    
   </React.StrictMode>,
   document.getElementById('root')
 );
