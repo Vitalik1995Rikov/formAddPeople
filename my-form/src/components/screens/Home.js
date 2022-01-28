@@ -5,7 +5,7 @@ import Purchasers from "../items/Purchasers/Purchasers";
 
 const Home = () => {
     return (
-        <div className="">
+        <div className="p-10">
             <Description/>
             <Purchasers/>
         </div>
