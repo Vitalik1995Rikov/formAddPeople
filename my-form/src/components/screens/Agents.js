@@ -23,6 +23,8 @@ const data = [
 
 const Agents = () => {
     return (
-        <div></div>
+        <div>Agents</div>
     )
 }
+
+export default Agents

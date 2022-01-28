@@ -2,7 +2,7 @@ import React from "react";
 
 const OurProperty = () => {
     return (
-        <div></div>
+        <div>Our</div>
     )
 }
 
